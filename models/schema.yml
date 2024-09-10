@@ -38,3 +38,8 @@ sources:
       - name: ship
         identifier: raw_gz_ship
         description: Greenweez ship information / Each row is order shipping information
+        columns:
+          - name: orders_id
+            tests:
+              - not_null
+              - unique                  
