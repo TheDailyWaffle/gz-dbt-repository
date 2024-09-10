@@ -1,0 +1,16 @@
+
+version: 2
+
+sources:
+  - name: raw_gz_sales
+    config:
+      alias: sales
+
+  - name: raw_gz_product
+    config:
+      alias: product
+
+  - name: raw_gz_ship
+    config:
+      alias: ship
+
