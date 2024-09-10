@@ -21,14 +21,13 @@ sources:
           - name: quantity
             description: num products purchased
       
-      
       - name: product
         identifier: raw_gz_product
         description: Greenweez product information / Each row is purchase price of a product
         columns:
           - name: products_id
             description: id of product
-            tests: 
+            tests:
               - not_null
               - unique
           - name: purchase_price
