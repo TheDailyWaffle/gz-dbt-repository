@@ -1,4 +1,3 @@
-
 version: 2
 
 sources:
@@ -13,4 +12,3 @@ sources:
   - name: raw_gz_ship
     config:
       alias: ship
-
