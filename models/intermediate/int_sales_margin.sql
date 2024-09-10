@@ -31,6 +31,6 @@ select
     quantity,
     purchase_price,
     purchase_cost,
-    ROUND((revenue / purchase_cost),2) as margin,
+    ROUND((revenue - purchase_cost),2) as margin,
 from combined
 order by date_date ASC, orders_id ASC
