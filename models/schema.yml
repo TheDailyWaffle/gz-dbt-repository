@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: gz_raw_data # taken from bgqry name
+    tables:
+      
+      
+      - name: sales
+        identifier: raw_gz_sales
+        description: Greenweez sales information / Each row is the product info of an order
+        columns:
+          - name: date_date
+            description: date of order
+          - name: orders_id
+            description: id of order
+          - name: pdt_id
+            description: id of product
+          - name: revenue
+            description: cash money yeah
+          - name: quantity
+            description: num products purchased
+      
+      - name: product
+        identifier: raw_gz_product
+        description: Greenweez product information / Each row is purchase price of a product
+        columns:
+          - name: products_id
+            description: id of product
+            tests:
+              - not_null
+              - unique
+          - name: purchase_price
+            description: price of product
+      
+      
+      - name: ship
+        identifier: raw_gz_ship
+        description: Greenweez ship information / Each row is order shipping information
+        columns:
+          - name: orders_id
+            tests:
+              - not_null
+              - unique                  
