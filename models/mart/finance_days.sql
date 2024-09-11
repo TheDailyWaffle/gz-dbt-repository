@@ -1,4 +1,6 @@
 
+{{ config(materialized="table") }}
+
 SELECT
     date_date
     ,COUNT(order_id) AS nb_transactions
