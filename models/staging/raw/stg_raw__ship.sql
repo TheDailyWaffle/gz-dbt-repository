@@ -16,5 +16,6 @@ with
 
 select *
 from renamed
+order by orders_id DESC
 -- order by (shipping_fee_1 - shipping_fee) DESC
 -- where shipping_fee <> shipping_fee_1
